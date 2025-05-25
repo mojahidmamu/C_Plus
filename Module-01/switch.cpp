@@ -21,7 +21,7 @@ int main()
     case 'u':
         cout << "Vowel\n";
         break;
-        
+
     default:
         cout << "Constant\n";
         break;
