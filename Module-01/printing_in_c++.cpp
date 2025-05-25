@@ -1,7 +1,6 @@
-// alksdjfa
-/*
-asdfjlasdjf
-fsaldkfjlsakjdflaskdf
- safdkjlsadfaks
- 
-*/
+#include<iostream>
+int main ()
+{
+    std:: cout << "Mojahid";
+    return 0;
+}
