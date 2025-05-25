@@ -15,6 +15,8 @@ int main()
     }
     b[3] = 50;
     b[4] = 51;    
+
+    delete[] a; // delete an array: 
     
     for (int i = 0; i < 5; i++)
     {
