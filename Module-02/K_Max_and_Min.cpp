@@ -2,6 +2,8 @@
 using namespace std;
 int main()
 {
-    
-    return 0;
+    int a, b, c;
+    cin >> a >> b >> c;
+    cout << min({a, b, c}) << " ";
+    cout << max({a, b, c});
 }
