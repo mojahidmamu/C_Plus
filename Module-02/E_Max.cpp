@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include<algorithm>
 using namespace std;
 int main()
 {
@@ -10,10 +9,16 @@ int main()
     {
         cin >> a[i];
     }
+    int mx = INT_MIN;
     for (int i = 0; i < n; i++)
     {
-        cout << max(a[i]) << endl;
+        mx = max(mx, a[i]);
+        
+        // if (a[i] > max)
+        // {
+        //     max = a[i];
+        // }
     }
-
+    cout << mx << endl;
     return 0;
 }
