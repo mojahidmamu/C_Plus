@@ -11,16 +11,19 @@ public:
 
 int main()
 {
-    Student a, b;
-    // cin >> a.name >> a.roll >> a.gpa; // take input from user
-    // cin >> b.name >> b.roll >> b.gpa;
+    Student rahim;
+    rahim.roll = 60;
+    rahim.gpa = 4.83;
+    char temp[100] = "Rahim";
+    strcpy(rahim.name, temp);
 
-    a.roll = 60;
-    a.gpa = 4.83;
-    char temp[100] = "Mojahid";
-    strcpy(a.name, temp);
+    Student karim;
+    karim.roll = 60;
+    karim.gpa = 4.83;
+    char tem[100] = "Karim";
+    strcpy(karim.name, tem);
 
-    cout << a.name << " " << a.gpa << " " << a.roll << endl;
-    cout << b.name << " " << b.gpa << " " << b.roll << endl;
+    cout << rahim.name << " " << rahim.gpa << " " << rahim.roll << endl;
+    cout << karim.name << " " << karim.gpa << " " << karim.roll << endl;
     return 0;
-} 
+}
