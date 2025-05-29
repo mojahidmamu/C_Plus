@@ -10,15 +10,16 @@ int main()
         cin >> arr[i];
     }
 
-    int min_element = INT_MIN;
-    for (int i = 0; i < n; i++)
+    int min_index = 0;
+    for (int i = 1; i < n; i++)
     {
-        if (arr[i] < min_element)
+        if (arr[i] < arr[min_index])
         {
-            min_element = arr[i];
+            min_index = i;
         }
     }
 
+    int min_element = arr[min_index];
     int min_count = 0;
     for (int i = 0; i < n; i++)
     {

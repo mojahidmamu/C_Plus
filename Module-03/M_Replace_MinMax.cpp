@@ -10,26 +10,25 @@ int main()
         cin >> arr[i];
     }
 
-    int min_element = INT_MIN;
-    for (int i = 0; i < n; i++)
+    int min_index = 0;
+    for (int i = 1; i < n; i++)
     {
-        if (arr[i] < min_element)
+        if (arr[i] < arr[min_index  ])
         {
-            min_element = arr[i];
+            min_index = i;
         }
     }
 
-    int max_element = INT_MAX;
-    for (int i = 0; i < n; i++)
+    int max_index = 0;
+    for (int i = 1; i < n; i++)
     {
-        // max
-        if (arr[i] > max_element)
+        if (arr[i] > arr[max_index])
         {
-            max_element = arr[i];
+            max_index = i;
         }
     }
 
-    swap(max_element, min_element);
+    swap(arr[min_index], arr[max_index]);
 
     for (int i = 0; i < n; i++)
     {
