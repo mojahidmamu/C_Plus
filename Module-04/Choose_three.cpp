@@ -14,6 +14,8 @@ int main()
             cin >> arr[i];
         }
 
+        bool found = false;
+
         int i = 0, j = i + 1, k = j + 1;
         for (int i = 0; i < N - 2; i++)
         {
@@ -23,11 +25,8 @@ int main()
                 {
                     if (arr[i] + arr[j] + arr[k] == S)
                     {
-                        cout << "YES" << endl;
-                    }
-                    else
-                    {
-                        cout << "NO" << endl;
+                        found = true;
+                        break;
                     }
                 }
             }
@@ -36,7 +35,18 @@ int main()
         i++;
         j++;
         k++;
+
+        if (found)
+        {
+            cout << "YES" << endl;
+        }
+        else
+        {
+            cout << "NO" << endl;
+        }
+
     }
 
     return 0;
 }
+// Accepted...
