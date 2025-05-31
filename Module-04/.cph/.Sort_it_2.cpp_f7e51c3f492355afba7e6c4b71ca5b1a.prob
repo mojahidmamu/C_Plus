@@ -1,0 +1,1 @@
+{"name":"Local: Sort_it_2","url":"d:\\PHITRON\\Introduction to C++ for DSA\\Module-04\\Sort_it_2.cpp","tests":[{"id":1748683570570,"input":"5\n1 4 2 3 5","output":"5 4 3 2 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PHITRON\\Introduction to C++ for DSA\\Module-04\\Sort_it_2.cpp","group":"local","local":true}
