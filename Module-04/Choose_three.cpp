@@ -13,16 +13,25 @@ int main()
         {
             cin >> arr[i];
         }
-        
+
         int i = 0, j = i + 1, k = j + 1;
-        if (arr[i] + arr[j] + arr[k] == S)
+        for (int i = 0; i < N - 2; i++)
         {
-            cout << "YES" << endl;
+            for (int j = i + 1; j < N - 1; j++)
+            {
+                for (int k = j + 1; k < N; k++)
+                {
+                    if (arr[i] + arr[j] + arr[k] == S)
+                    {
+                        cout << "YES" << endl;
+                    }
+                    else
+                    {
+                        cout << "NO" << endl;
+                    }
+                }
+            }
         }
-        // else
-        // {
-        //     cout << "NO" << endl;
-        // }
 
         i++;
         j++;
