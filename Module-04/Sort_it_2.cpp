@@ -8,8 +8,7 @@ int *sort_it(int n)
         cin >> arr[i];
     }
 
-    sort(arr, arr + n,  greater<int>());
-
+    sort(arr, arr + n, greater<int>());
     return arr;
 }
 int main()
@@ -22,7 +21,8 @@ int main()
     {
         cout << result[i] << " ";
     }
-    cout << endl;
 
+    cout << endl;
     return 0;
 }
+// ACCEPTED.... 
