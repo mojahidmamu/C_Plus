@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-    char s[100000];
+    string s[100000];
     cin >> s;
-    
+
     return 0;
 }
