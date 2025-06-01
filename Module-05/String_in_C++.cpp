@@ -3,8 +3,17 @@ using namespace std;
 int main()
 {
     string s = "Mojahid";
-    s = "Abdullah all Mojahid bin Yousof";
+    string s2 = "Abdullah all Mojahid bin Yousof";
 
-    cout << s << endl;
+    if (s == s2)
+    {
+        cout << "Same" << endl;
+    }
+    else
+    {
+        cout << "Not-same" << endl;
+    }
+
+    // cout << s << endl;
     return 0;
 }
