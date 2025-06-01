@@ -2,17 +2,17 @@
 using namespace std;
 int main()
 {
-     string s = "Adu";
+    string s = "Adu";
     //  string s2 = "Mojahid";
 
     // for (int i = 0; i < s.size(); i++)
     // {
     //     cout << s[i] << endl;
     // }
-    
-    s.begin();
+
+    *s.begin();
     cout << s << endl;
-    s.end();
+    // *s.end();
     cout << s << endl;
     return 0;
 }
