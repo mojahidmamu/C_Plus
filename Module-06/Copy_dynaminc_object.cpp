@@ -15,10 +15,10 @@ int main()
 {
     Cricketer *dhoni = new Cricketer("India", 7);
     Cricketer *kholi = new Cricketer("India", 18);
-    kholi = dhoni;
+    *kholi = *dhoni;
     cout << "Dhoni " << dhoni->country << " " << dhoni->jersey << endl;
     // delete dhoni;
-    
+
     cout << "Kholi " << kholi->country << " " << kholi->jersey << endl;
     return 0;
 }
