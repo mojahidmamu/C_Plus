@@ -3,19 +3,18 @@ using namespace std;
 int main()
 {
     string S;
-    cin >> S;
+    getline(cin, S);
     stringstream ss(S);
     string word;
-    bool first = true;
+    ss >> word;
+    reverse(word.begin(), word.end());
+    cout << word;
+
     while (ss >> word)
     {
-        reverse(word.begin(), word.end()); // Reverse the word
-        if (!first)
-            cout << " "; // print space if it’s not the first word
-        cout << word;
-        first = false;
+        reverse(word.begin(), word.end());
+        cout << " " << word;
     }
 
-    cout << endl;
     return 0;
 }

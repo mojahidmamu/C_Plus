@@ -12,7 +12,7 @@ public:
     {
         cout << "Hello from " << name << endl;
     }
-};
+}; 
 
 int main()
 {
