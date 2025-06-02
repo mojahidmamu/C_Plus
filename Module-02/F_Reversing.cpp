@@ -17,7 +17,9 @@ int main()
     //     j--;
     // }
 
-    for (int i = n-1; i >= 0; i--)
+    reverse(a, a+n);
+
+    for (int i = 0; i < n ; i++)
     {
         cout << a[i] << " ";
     }
