@@ -4,11 +4,10 @@ int main()
 {
     string s;
     cin >> s;
+    string s2 = s;
+    reverse(s.begin(), s.end());
 
-
-    
-    int palirdrome = 1;
-    if (palirdrome == 1)
+    if (s == s2)
     {
         cout << "YES" << endl;
     }
