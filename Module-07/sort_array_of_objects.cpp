@@ -7,6 +7,19 @@ public:
     int roll;
     int marks;
 };
+
+bool cmp(Student l, Student r) // compare function
+{
+    if (l.marks < r.marks)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
 int main()
 {
     int n;
@@ -18,11 +31,11 @@ int main()
         cin >> arr[i].name >> arr[i].roll >> arr[i].marks;
     }
 
-    sort(arr, arr + n);
+    sort(arr, arr + n, cmp); // custom compare function
 
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i].name << " " << arr[i].roll << " " << arr[i].marks << " ";
+        cout << arr[i].name << " " << arr[i].roll << " " << arr[i].marks << endl;
     }
 
     return 0;
