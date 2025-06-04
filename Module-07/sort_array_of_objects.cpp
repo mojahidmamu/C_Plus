@@ -10,7 +10,8 @@ public:
 
 bool cmp(Student l, Student r) // compare function
 {
-    if (l.marks < r.marks)
+    if (l.marks < r.marks) // for inreasing
+    // if (l.marks > r.marks) // for decreasing
     {
         return true;
     }
