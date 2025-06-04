@@ -10,8 +10,8 @@ public:
 
 bool cmp(Student l, Student r) // compare function
 {
-    if (l.marks < r.marks) // for inreasing
     // if (l.marks > r.marks) // for decreasing
+    if (l.marks < r.marks) // for inreasing
     {
         return true;
     }
@@ -19,6 +19,7 @@ bool cmp(Student l, Student r) // compare function
     {
         return false;
     }
+    // return l.marks < r.marks; // short-cut of if-else condition
 }
 
 int main()
