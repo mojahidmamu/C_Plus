@@ -18,15 +18,12 @@ int main()
         cin >> arr[i].name >> arr[i].roll >> arr[i].marks;
     }
 
-    int mx= INT_MIN; // for maximum
-    //  int minimum = INT_MAX; // for minimum
+    sort(arr, arr + n);
+
     for (int i = 0; i < n; i++)
     {
-         mx = max(arr[i].marks, mx); // for maximum
-        //  minimum = min(arr[i].marks, minimum); //for minimum
+        cout << arr[i].name << " " << arr[i].roll << " " << arr[i].marks << " ";
     }
-    cout << " Maximum marks is: " <<  mx << endl; // for maximum
-    // cout << " Minimum marks is: " <<  minimum << endl; // for minimum
 
     return 0;
 }
