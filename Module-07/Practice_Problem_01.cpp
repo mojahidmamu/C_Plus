@@ -41,7 +41,7 @@ int main()
         cin >> arr[i].name >> arr[i].roll >> arr[i].marks;
     }
 
-    sort(arr, arr + n), cmp;
+    sort(arr, arr + n, cmp);
 
     for (int i = 0; i < n; i++)
     {
