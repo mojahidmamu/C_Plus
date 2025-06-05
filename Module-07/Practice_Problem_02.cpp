@@ -8,29 +8,6 @@ public:
     int marks;
 };
 
-bool cmp(Student l, Student r)
-{
-    if (l.marks > r.marks)
-    {
-        return true;
-    }
-    else if (l.marks < r.marks)
-    {
-        return false;
-    }
-    else
-    {
-        if (l.roll < r.roll)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-}
-
 int main()
 {
     int n;
@@ -41,7 +18,7 @@ int main()
         cin >> arr[i].name >> arr[i].roll >> arr[i].marks;
     }
 
-    sort(arr, arr + n, cmp);
+    reverse(arr, arr + n);
 
     for (int i = 0; i < n; i++)
     {
