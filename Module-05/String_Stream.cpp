@@ -5,7 +5,7 @@
 //     string s;
 //     getline(cin, s);
 //     cout << s << endl;
-
+ 
 //     stringstream ss(s);
 //     string word;
 //     ss >> word;
