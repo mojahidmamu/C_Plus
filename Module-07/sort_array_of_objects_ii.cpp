@@ -44,7 +44,7 @@ int main()
     }
 
     sort(arr, arr + n, cmp); // custom compare function
-    sort(arr, arr + n, greater<int>());
+    // sort(arr, arr + n, greater<int>());
 
     for (int i = 0; i < n; i++)
     {
