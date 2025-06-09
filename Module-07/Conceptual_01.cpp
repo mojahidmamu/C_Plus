@@ -19,6 +19,7 @@ int main()
     // {
     //     cout << s[i] << " ";
     // }
+    
 
     stringstream ss(s);
     string word;
