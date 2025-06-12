@@ -13,15 +13,26 @@ public:
 
 bool cmp(Student l, Student r)
 {
-    if (l.math_makrs + l.english_makrs > r.math_makrs + r.english_makrs)
+    if (l.english_makrs > r.english_makrs)
     {
         return true;
     }
-    else if (l.math_makrs + l.english_makrs == r.math_makrs + r.english_makrs)
+    else if (l.english_makrs == r.english_makrs)
     {
-        if (l.id < r.id)
+        if (l.math_makrs > r.math_makrs)
         {
             return true;
+        }
+        else if (l.math_makrs == r.math_makrs)
+        {
+            if (l.id < r.id)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         else
         {
@@ -33,6 +44,7 @@ bool cmp(Student l, Student r)
         return false;
     }
 }
+
 
 int main()
 {
