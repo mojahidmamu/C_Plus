@@ -9,10 +9,9 @@ int main()
         string sentence, target_str;
         cin >> sentence >> target_str;
 
-        size_t pos;
-        while ((pos = sentence.find(target_str)) != string::npos)
+        while (sentence.find(target_str) != string::npos)
         {
-            sentence.replace(sentence.find(target_str),  target_str.size(), "#");
+            sentence.replace(sentence.find(target_str), target_str.size(), "#");
         }
 
         cout << sentence << endl;
@@ -20,3 +19,4 @@ int main()
 
     return 0;
 }
+// Accepted...
