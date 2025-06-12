@@ -19,7 +19,17 @@ int main()
         cin >> arr[i].name >> arr[i].cls >> arr[i].section >> arr[i].id;
     }
 
-    // reverse(arr->section, arr->section + n);
+    // reverse(arr->section, arr->section + n); 
+    int i = 0, j = n-1;
+    while (i < j)
+    {
+        int temp = arr[i].section;
+        arr[i].section = arr[j].section;
+        arr[j].section = temp;
+        i++;
+        j--;
+    }
+    
 
     for (int i = 0; i < n; i++)
     {
