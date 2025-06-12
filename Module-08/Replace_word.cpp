@@ -6,18 +6,17 @@ int main()
     cin >> test;
     while (test--)
     {
-        string str, target_str;
-        cin >> str, target_str;
+        string sentence, target_str;
+        cin >> sentence >> target_str;
 
-        stringstream ss(str);
-        string word;
-        while (ss >> word)
+        size_t pos;
+        while ((pos = sentence.find(target_str)) != string::npos)
         {
-            
+            sentence.replace(sentence.find(target_str),  target_str.size(), "#");
         }
-        
 
+        cout << sentence << endl;
     }
-    
+
     return 0;
 }
