@@ -1,11 +1,9 @@
-#include <bits/stdc++.h>
-#include<stdio.h>
-using namespace std;
+#include <stdio.h>
 int main()
 {
     int a, b;
-    cin >> a >> b;
+    std::cin >> a >> b;
     int sum = a + b;
-    cout << sum << endl;
+    std::cout << sum << std::endl;
     return 0;
 }
