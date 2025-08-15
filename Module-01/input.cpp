@@ -9,5 +9,8 @@ int main()
     cout << (int)c << endl; // typecasting for ASCII value form char,
     char d = 97;
     cout << (char)d << endl; 
+    int A;
+    cin >> A;
+    cout << A << endl;
     return 0;
 }
